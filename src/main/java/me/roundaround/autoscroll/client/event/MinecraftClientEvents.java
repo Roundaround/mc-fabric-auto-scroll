@@ -14,6 +14,8 @@ public interface MinecraftClientEvents {
       (listeners) -> (client) -> Arrays.stream(listeners).forEach((listener) -> listener.interact(client)));
   Event<MinecraftClientEvents> ON_SCREEN_CHANGE = EventFactory.createArrayBacked(MinecraftClientEvents.class,
       (listeners) -> (client) -> Arrays.stream(listeners).forEach((listener) -> listener.interact(client)));
+  Event<MinecraftClientEvents> ON_MOUSE_UPDATE = EventFactory.createArrayBacked(MinecraftClientEvents.class,
+      (listeners) -> (client) -> Arrays.stream(listeners).forEach((listener) -> listener.interact(client)));
 
   void interact(MinecraftClient client);
 }
