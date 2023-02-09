@@ -1,7 +1,5 @@
 package me.roundaround.autoscroll.client;
 
-import org.lwjgl.glfw.GLFW;
-
 import me.roundaround.autoscroll.client.event.MinecraftClientEvents;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
@@ -19,7 +17,7 @@ public class AutoScrollClientMod implements ClientModInitializer {
     activateKeyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
         "autoscroll.key.activate",
         InputUtil.Type.KEYSYM,
-        GLFW.GLFW_KEY_O,
+        InputUtil.UNKNOWN_KEY.getCode(),
         KeyBinding.MISC_CATEGORY));
 
     MinecraftClientEvents.ON_INPUT.register((client) -> {
