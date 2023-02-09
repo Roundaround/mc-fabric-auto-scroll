@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "me.roundaround.autoscroll.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MinecraftClientMixin",
+    "MouseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "autoscroll",
+  "version": "${version}",
+  "name": "Auto Scroll",
+  "description": "Automatically scroll through your hotbar quickly for easy block palette randomization.",
+  "authors": [
+    "Roundaround"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "MIT",
+  "icon": "assets/autoscroll/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.roundaround.autoscroll.client.AutoScrollClientMod"
+    ]
+  },
+  "mixins": [
+    "autoscroll.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "minecraft": "1.19.x",
+    "java": ">=17"
+  }
+}
