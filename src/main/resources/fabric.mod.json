@@ -8,8 +8,9 @@
     "Roundaround"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://modrinth.com/mod/roundaround-auto-scroll",
+    "sources": "https://github.com/Roundaround/mc-auto-scroll",
+    "issues": "https://github.com/Roundaround/mc-auto-scroll/issues"
   },
   "license": "MIT",
   "icon": "assets/autoscroll/icon.png",
