@@ -8,7 +8,7 @@
     "Roundaround"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/roundaround-auto-scroll",
+    "homepage": "https://modrinth.com/mod/auto-scroll",
     "sources": "https://github.com/Roundaround/mc-auto-scroll",
     "issues": "https://github.com/Roundaround/mc-auto-scroll/issues"
   },
@@ -25,7 +25,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.13.3",
-    "minecraft": "1.19.x",
+    "minecraft": ">=1.20-beta.1 <1.21",
     "java": ">=17"
   }
 }
