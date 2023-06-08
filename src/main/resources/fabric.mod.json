@@ -3,7 +3,7 @@
   "id": "autoscroll",
   "version": "${version}",
   "name": "Auto Scroll",
-  "description": "Automatically scroll through your hotbar quickly for easy block palette randomization.",
+  "description": "Automatically scroll through your hotbar quickly for easy block palette randomization.\n${library}",
   "authors": [
     "Roundaround"
   ],
@@ -25,7 +25,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.13.3",
-    "minecraft": ">=1.20-beta.1 <1.21",
+    "minecraft": "1.20.*",
     "java": ">=17"
   }
 }
