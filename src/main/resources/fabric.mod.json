@@ -1,29 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "autoscroll",
+  "id": "${modId}",
   "version": "${version}",
   "name": "Auto Scroll",
-  "description": "Automatically scroll through your hotbar quickly for easy block palette randomization.\n${library}",
+  "description": "Automatically scroll through your hotbar quickly for easy block palette randomization.",
   "authors": [
     "Roundaround"
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/auto-scroll",
-    "sources": "https://github.com/Roundaround/mc-auto-scroll",
-    "issues": "https://github.com/Roundaround/mc-auto-scroll/issues"
+    "sources": "https://github.com/Roundaround/mc-fabric-auto-scroll",
+    "issues": "https://github.com/Roundaround/mc-fabric-auto-scroll/issues"
   },
-  "license": "MIT",
-  "icon": "assets/autoscroll/icon.png",
-  "environment": "client",
-  "entrypoints": {
-    "client": [
-      "me.roundaround.autoscroll.client.AutoScrollClientMod"
-    ]
-  },
-  "mixins": [
-    "autoscroll.mixins.json"
-  ],
-  "depends": {
-    "minecraft": "1.21.*"
-  }
+  "license": "MIT"
 }
