@@ -3,8 +3,8 @@ package me.roundaround.autoscroll.client;
 import me.roundaround.autoscroll.client.event.MinecraftClientEvents;
 import me.roundaround.gradle.api.annotation.Entrypoint;
 import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
-import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.input.Scroller;
 import net.minecraft.client.option.KeyBinding;
@@ -22,7 +22,7 @@ public class AutoScrollClientMod implements ClientModInitializer {
         "autoscroll.key.activate",
         InputUtil.Type.KEYSYM,
         InputUtil.UNKNOWN_KEY.getCode(),
-        KeyBinding.MISC_CATEGORY
+        KeyBinding.Category.MISC
     ));
 
     MinecraftClientEvents.ON_INPUT.register((client) -> {
@@ -39,9 +39,7 @@ public class AutoScrollClientMod implements ClientModInitializer {
       isScrolling = false;
     });
 
-    WorldRenderEvents.START.register((context) -> {
-      MinecraftClient client = MinecraftClient.getInstance();
-
+    ClientTickEvents.START_CLIENT_TICK.register((client) -> {
       if (!isScrolling || client.currentScreen != null || client.player == null) {
         return;
       }
